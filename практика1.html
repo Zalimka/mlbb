@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Legends: Bang Bang Item Guide</title>
+    <link rel="stylesheet" href="практика1.css">
+</head>
+<body>
+    <header>
+        <h1>Mobile Legends: Bang Bang Item Guide</h1>
+    </header>
+    <main>
+        <section id="intro">
+            <h2>Welcome to the Mobile Legends: Bang Bang Item Guide!</h2>
+            <p>Here you will find a comprehensive guide to all the items in the game, categorized by their role and stats. Click on any category below to explore the available items.</p>
+        </section>
+        <section id="categories">
+            <div class="category">
+                <button onclick="showItems('Magic')">Magic</button>
+            </div>
+            <div class="category">
+                <button onclick="showItems('Physical')">Physical</button>
+            </div>
+            <div class="category">
+                <button onclick="showItems('Tank')">Tank</button>
+            </div>
+        </section>
+        <section id="items">
+            </section>
+    </main>
+    <script>
+        function showItems(category) {
+            const itemsSection = document.getElementById('items');
+            itemsSection.innerHTML = '';
+
+            const items = {
+                Magic: [
+                    // Magic Items
+                    { name: 'Arcane Boots', description: 'Increases Movement Speed and Magic Penetration.', icon: 'https://i.yapx.ru/YHwzq.png' },
+                    { name: 'Clock of Destiny', description: 'Increases Max Mana, Magic Power, and Magic Defense.', icon: 'https://i.yapx.ru/YHyeg.png' },
+                    { name: 'Glowing Wand', description: 'Increases Magic Power and Magic Penetration.', icon: 'https://i.yapx.ru/YHyTB.png' },
+                    { name: 'Holy Crystal', description: 'Increases Magic Power.', icon: 'https://i.yapx.ru/YHyiM.png' },
+                    { name: 'Ice Queen Wand', description: 'Increases Magic Power and Slows enemies with attacks.', icon: 'https://i.yapx.ru/YHyTa.png' },
+                    { name: 'Lightning Truncheon', description: 'Increases Magic Power and Mana.', icon: 'https://i.yapx.ru/YHyTN.png' },
+                    { name: 'Necklace of Durance', description: 'Increases Magic Power and reduces enemy Magic Resistance.', icon: 'https://i.yapx.ru/YHySi.png' },
+                    { name: 'Concentrated Energy', description: 'Increases Max Mana and Magic Power.', icon: 'https://i.yapx.ru/YHyUC.png' },
+                    { name: 'Fleeting Time', description: 'Increases Magic Power and Cooldown Reduction.', icon: 'https://i.yapx.ru/YHyUG.png' },
+                    { name: 'Genius Wand', description: 'Increases Magic Power and Magic Penetration.', icon: 'https://i.yapx.ru/YHyki.png' },
+                    { name: 'Blood Wings', description: 'Increases Magic Power and Max HP.', icon: 'https://i.yapx.ru/YHyUI.png' },
+                    { name: 'Cursed Helmet', description: 'Increases Magic Defense and deals Magic Damage to nearby enemies.', icon: 'https://i.yapx.ru/YHynn.png' },
+                    { name: 'Demon Shoes', description: 'Increases Movement Speed and Magic Penetration.', icon: 'images/DemonShoes.png' },
+                    { name: 'Divine Glaive', description: 'Increases Magic Power and Magic Penetration.', icon: 'images/DivineGlaive.png' },
+                    { name: 'Enchanted Talisman', description: 'Increases Magic Power and Mana Regeneration.', icon: 'images/EnchantedTalisman.png' },
+                    { name: 'Feather of Heaven', description: 'Increases Magic Power and Movement Speed.', icon: 'images/FeatherOfHeaven.png' },
+                    { name: 'Frost Queen’s Wand', description: 'Increases Magic Power and Slows enemies with attacks.', icon: 'images/FrostQueensWand.png' },
+                    { name: 'Golden Staff', description: 'Increases Magic Power and Magic Penetration.', icon: 'images/GoldenStaff.png' },
+                    { name: 'Hunter Strike', description: 'Increases Magic Power and Physical Attack.', icon: 'images/HunterStrike.png' },
+                    { name: 'Ice Queen Wand', description: 'Increases Magic Power and Slows enemies with attacks.', icon: 'images/IceQueenWand.png' },
+                    { name: 'Lightning Truncheon', description: 'Increases Magic Power and Mana.', icon: 'images/LightningTruncheon.png' },
+                    { name: 'Necklace of Durance', description: 'Increases Magic Power and reduces enemy Magic Resistance.', icon: 'images/NecklaceOfDurance.png' },
+                    { name: 'Sea Halberd', description: 'Increases Magic Power and reduces enemy Physical Defense.', icon: 'images/SeaHalberd.png' },
+                    { name: 'Sky Guardian Helmet', description: 'Increases Magic Defense and Mana.', icon: 'images/SkyGuardianHelmet.png' },
+                    { name: 'Scepter of  Destiny', description: 'Increases Magic Power and Magic Penetration.', icon: 'images/ScepterOfDestiny.png' },
+                    { name: 'Shadow Twin Blades', description: 'Increases Magic Power and Physical Attack.', icon: 'images/ShadowTwinBlades.png' },
+                    { name: 'The Book of the Sun', description: 'Increases Magic Power and Max HP.', icon: 'images/TheBookOfTheSun.png' },
+                    { name: 'The Book of the Moon', description: 'Increases Magic Power and Magic Penetration.', icon: 'images/TheBookOfTheMoon.png' },
+                    { name: 'Wand of  Wilful Force', description: 'Increases Magic Power and Magic Penetration.', icon: 'images/WandOfWilfulForce.png' },
+                    { name: 'Winter Truncheon', description: 'Increases Magic Power and provides immunity to damage.', icon: 'images/WinterTruncheon.png' },
+                ],
+                Physical: [
+                    // Physical Items
+                    { name: 'Warrior Boots', description: 'Increases Movement Speed and Physical Defense.', icon: 'images/WarriorBoots.png' },
+                    { name: 'Blade of Despair', description: 'Increases Physical Attack and grants a bonus Physical Attack when attacking heroes below 50% HP.', icon: 'https://i.yapx.ru/YHuqE.png' },
+                    { name: 'Bloodlust Axe', description: 'Increases Physical Attack and Physical Lifesteal.', icon: 'images/BloodlustAxe.png' },
+                    { name: 'Corrosion Scythe', description: 'Increases Physical Attack and Physical Penetration.', icon: 'images/CorrosionScythe.png' },
+                    { name: 'Demon Hunter Sword', description: 'Increases Physical Attack and Physical Penetration.', icon: 'images/DemonHunterSword.png' },
+                    { name: 'Endless Battle', description: 'Increases Physical Attack, Mana, and Physical Lifesteal.', icon: 'images/EndlessBattle.png' },
+                    { name: 'Haas Claws', description: 'Increases Physical Attack and Physical Lifesteal.', icon: 'images/HaasClaws.png' },
+                    { name: 'Hunter Strike', description: 'Increases Physical Attack and Magic Power.', icon: 'images/HunterStrike.png' },
+                    { name: 'Malefic Roar', description: 'Increases Physical Attack and reduces enemy Physical Defense.', icon: 'images/MaleficRoar.png' },
+                    { name: 'Machete', description: 'Increases Physical Attack and Physical Penetration.', icon: 'images/Machete.png' },
+                    { name: 'Raptor Machete', description: 'Increases Physical Attack and Physical Penetration.', icon: 'images/RaptorMachete.png' },
+                    { name: 'Scarlet Phantom', description: 'Increases Physical Attack and Attack Speed.', icon: 'images/ScarletPhantom.png' },
+                    { name: 'Sea Halberd', description: 'Increases Physical Attack and reduces enemy Magic Defense.', icon: 'images/SeaHalberd.png' },
+                    { name: 'Shadow Twin Blades', description: 'Increases Physical Attack and Magic Power.', icon: 'images/ShadowTwinBlades.png' },
+                    { name: 'Swift Boots', description: 'Increases Movement Speed and Attack Speed.', icon: 'images/SwiftBoots.png' },
+                    { name: 'Thunder Belt', description: 'Increases Physical Attack and grants a burst of magic damage on hit.', icon: 'images/ThunderBelt.png' },
+                    { name: 'Windtalker', description: 'Increases Physical Attack, Attack Speed, and Movement Speed.', icon: 'images/Windtalker.png' },
+                    { name: 'Wind of Nature', description: 'Increases Physical Attack and provides immunity to damage.', icon: 'images/WindOfNature.png' },
+                    { name: 'Wings of the Apocalypse', description: 'Increases Physical Attack and grants a shield.', icon: 'images/WingsOfTheApocalypse.png' },
+                ],
+                Tank: [
+                    // Tank Items
+                    { name: 'Tough Boots', description: 'Increases Movement Speed and Magic Resistance.', icon: 'images/ToughBoots.png' },
+                    { name: 'Immortality', description: 'Resurrect with a shield and HP after being eliminated.', icon: 'images/Immortality.png' },
+                    { name: 'Dominance Ice', description: 'Increases Magic Resistance and reduces enemy Movement Speed and Attack Speed.', icon: 'images/DominanceIce.png' },
+                    { name: 'Guardian Helmet', description: 'Increases Magic Defense and grants a shield on taking damage.', icon: 'images/GuardianHelmet.png' },
+                    { name: 'Antique Cuirass', description: 'Increases Physical Defense and reduces enemy Physical Attack.', icon: 'images/AntiqueCuirass.png' },
+                    { name: 'Athena’s Shield', description: 'Increases Magic Defense and reduces magic damage received.', icon: 'images/AthenasShield.png' },
+                    { name: 'Cursed Helmet', description: 'Increases Magic Defense and deals Magic Damage to nearby enemies.', icon: 'images/CursedHelmet.png' },
+                    { name: 'Courage Mask', description: 'Increases Physical Defense and provides a buff to allies.', icon: 'images/CourageMask.png' },
+                    { name: 'Dominance Ice', description: 'Increases Magic Resistance and reduces enemy Movement Speed and Attack Speed.', icon: 'images/DominanceIce.png' },
+                    { name: 'Enchanted Talisman', description: 'Increases Magic Power and Mana Regeneration.', icon: 'images/EnchantedTalisman.png' },
+                    { name: 'Feather of Heaven', description: 'Increases Magic Power and Movement Speed.', icon: 'images/FeatherOfHeaven.png' },
+                    { name: 'Frost Queen’s Wand', description: 'Increases Magic Power and Slows enemies with attacks.', icon: 'images/FrostQueensWand.png' },
+                    { name: 'Golden Staff', description: 'Increases Magic Power and Magic Penetration.', icon: 'images/GoldenStaff.png' },
+                    { name: 'Hunter Strike', description: 'Increases Magic Power and Physical Attack.', icon: 'images/HunterStrike.png' },
+                    { name: 'Ice Queen Wand', description: 'Increases Magic Power and Slows enemies with attacks.', icon: 'images/IceQueenWand.png' },
+                    { name: 'Lightning Truncheon', description: 'Increases Magic Power and Mana.', icon: 'images/LightningTruncheon.png' },
+                    { name: 'Necklace of Durance', description: 'Increases Magic Power and reduces enemy Magic Resistance.', icon: 'images/NecklaceOfDurance.png' },
+                    { name: 'Sea Halberd', description: 'Increases Magic Power and reduces enemy Physical Defense.', icon: 'images/SeaHalberd.png' },
+                    { name: 'Sky Guardian Helmet', description: 'Increases Magic Defense and Mana.', icon: 'images/SkyGuardianHelmet.png' },
+                    { name: 'Scepter of  Destiny', description: 'Increases Magic Power and Magic Penetration.', icon: 'images/ScepterOfDestiny.png' },
+                    { name: 'Shadow Twin Blades', description: 'Increases Magic Power and Physical Attack.', icon: 'images/ShadowTwinBlades.png' },
+                    { name: 'The Book of the Sun', description: 'Increases Magic Power and Max HP.', icon: 'images/TheBookOfTheSun.png' },
+                    { name: 'The Book of the Moon', description: 'Increases Magic Power and Magic Penetration.', icon: 'images/TheBookOfTheMoon.png' },
+                    { name: 'Wand of  Wilful Force', description: 'Increases Magic Power and Magic Penetration.', icon: 'images/WandOfWilfulForce.png' },
+                    { name: 'Winter Truncheon', description: 'Increases Magic Power and provides immunity to damage.', icon: 'images/WinterTruncheon.png' },
+                    { name: 'Rod of  Aphrodite', description: 'Increases Physical Attack and Mana Regeneration.', icon: 'images/RodOfAphrodite.png' },
+                    { name: 'Rose Gold Meteor', description: 'Increases Physical Attack and Magic Resistance.', icon: 'images/RoseGoldMeteor.png' },
+                    { name: 'Thunder Belt', description: 'Increases Physical Attack and grants a burst of magic damage on hit.', icon: 'images/ThunderBelt.png' },
+                    { name: 'Twilight Armor', description: 'Increases Physical Defense and provides a shield.', icon: 'images/TwilightArmor.png' },
+                    { name: 'Wind of Nature', description: 'Increases Physical Attack and provides immunity to damage.', icon: 'images/WindOfNature.png' },
+                    { name: 'Wings of the Apocalypse', description: 'Increases Physical Attack and grants a shield.', icon: 'images/WingsOfTheApocalypse.png' },
+                    { name: 'Blade Armor', description: 'Increases Physical Defense and reflects Physical Damage.', icon: 'images/BladeArmor.png' },
+                    { name: 'Bruteforce Breastplate', description: 'Increases Physical Defense and Movement Speed.', icon: 'images/BruteforceBreastplate.png' },
+                    { name: 'Chain of Justice', description: 'Increases Physical Defense and reduces enemy Attack Speed.', icon: 'images/ChainOfJustice.png' },
+                    { name: 'Defense of  the Ancient', description: 'Increases Physical Defense and grants a shield.', icon: 'images/DefenseOfTheAncient.png' },
+                    { name: 'Dominance Ice', description: 'Increases Magic Resistance and reduces enemy Movement Speed and Attack Speed.', icon: 'images/DominanceIce.png' },
+                    { name: 'Guardian Helmet', description: 'Increases Magic Defense and grants a shield on taking damage.', icon: 'images/GuardianHelmet.png' },
+                    { name: 'Immortality', description: 'Resurrect with a shield and HP after being eliminated.', icon: 'images/Immortality.png' },
+                    { name: 'Queens Wings', description: 'Increases Physical Defense and provides a shield.', icon: 'images/QueensWings.png' },
+                    { name: 'Radiant Armor', description: 'Increases Physical Defense and reduces enemy Physical Attack.', icon: 'images/RadiantArmor.png' },
+                    { name: 'Red Buff', description: 'Increases Physical Attack and grants a slow effect.', icon: 'images/RedBuff.png' },
+                    { name: 'Shield of  the  Ancient', description: 'Increases Physical Defense and grants a shield.', icon: 'images/ShieldOfTheAncient.png' },
+                    { name: 'Sky Guardian Helmet', description: 'Increases Magic Defense and Mana.', icon: 'images/SkyGuardianHelmet.png' },
+                    { name: 'Twilight Armor', description: 'Increases Physical Defense and provides a shield.', icon: 'images/TwilightArmor.png' },
+                    { name: 'Tough Boots', description: 'Increases Movement Speed and Magic Resistance.', icon: 'images/ToughBoots.png' },
+                ],
+            }[category];
+
+            items.forEach(item => {
+                const itemDiv = document.createElement('div');
+                itemDiv.classList.add('item');
+                itemDiv.setAttribute('onclick', `showDescription('${item.name}', '${item.description}')`); // Added onclick to item div
+                itemDiv.innerHTML = `
+                    <img src="${item.icon}" alt="${item.name} Icon">  <!-- Added image tag -->
+                    <h3>${item.name}</h3>
+                    <p class="item-more">Click to learn more</p> <p id="${item.name}-description" style="display: none;">${item.description}</p>
+                `;
+                itemsSection.appendChild(itemDiv);
+            });
+        }
+
+        function showDescription(itemName, description) {
+            const descriptionElement = document.getElementById(`${itemName}-description`);
+            descriptionElement.style.display = descriptionElement.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>
